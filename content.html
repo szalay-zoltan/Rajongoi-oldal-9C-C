@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel = "icon" href = "https://lh3.googleusercontent.com/proxy/p8TA48D8CJO2tPlSx6ckwAdP0CoIU0T1rKjuWZTtDl9973yMw0hS25zVGM3G9EgGGauuNV-3MfYECrZa291PpH0BtTiosjE" 
         type = "image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -22,6 +25,34 @@
       "
     >
 
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="start.html" onclick="$('#mainContainer').load('index.html');">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="content.html" onclick="$('#mainContainer').load('main.html');">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" onclick="$('#mainContainer').load('contact.html');">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="$('#mainContainer').load('about.html');">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container-fluid" id="mainContainer">
+        <!-- Ide hegesztjük be a html oldalak tartalmát -->
+    </div>
+
+    <script>
+        $("#mainContainer").load("home.html");
+    </script>
     
       <div class="container-fluid text-white bg-dark">
         <img src="https://lh3.googleusercontent.com/proxy/1WqaQUf1MVIzcz0iT5Nc7QAfrEiJrJCkMUx_GgEII8bcE_LIRLObRGHxVc2qSrZfb-Bn_T929OqDilxOZ_74l6THvKXqBfGZP0Xx8FpvAGIQXOUWMUkXIg" class="float-left img-fluid" alt="labda" style="width:50px ">
