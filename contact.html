@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="oldalstílus.css" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid " id="mainContainer "></div>
+    <div style="background-image: url('foci.jpeg'); max-width: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+        <nav class=" navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand " href="start.html " onclick="$( '#mainContainer').load( 'index.html'); ">Home</a
+        >
+        <button
+          class="navbar-toggler "
+          type="button "
+          data-toggle="collapse "
+          data-target="#collapsibleNavbar "
+        >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar ">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a
+                class="nav-link "
+                href="content.html "
+                onclick="$( '#mainContainer').load( 'main.html'); "
+                >Main</a
+              >
+            </li>
+            <li class="nav-item ">
+              <a
+                class="nav-link "
+                href="contact.html "
+                onclick="$( '#mainContainer').load( 'contact.html'); "
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item ">
+              <a
+                class="nav-link "
+                href="about.html "
+                onclick="$( '#mainContainer').load( 'about.html'); "
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br />
+      
+      <div class="row ">
+        <div class="col-lg-6 col-lg-offset-4 ">
+          <form id="contact-form " method="post " action=" " role="form ">
+            <div class="messages "></div>
+
+            <div class="controls ">
+              <div class="row ">
+                <div class="col-md-6 ">
+                  <div class="form-group ">
+                    <label for="form_name ">Keresztnév *</label>
+                    <input
+                      id="form_name "
+                      type="text "
+                      name="name "
+                      class="form-control "
+                      placeholder="Írd be a keresztneved!* "
+                      required="required "
+                      data-error="Keresztnév szükséges. "
+                    />
+                    <div class="help-block with-errors "></div>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="form-group ">
+                    <label for="form_lastname ">Vezetéknév *</label>
+                    <input
+                      id="form_lastname "
+                      type="text "
+                      name="surname "
+                      class="form-control "
+                      placeholder="Írd be a vezetékneved!* "
+                      required="required "
+                      data-error=" Vezetéknév szükséges. "
+                    />
+                    <div class="help-block with-errors "></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-6 ">
+                  <div class="form-group ">
+                    <label for="form_email">Email *</label>
+                    <input
+                      id="form_email "
+                      type="email "
+                      name="email "
+                      class="form-control "
+                      placeholder="Írd be az email címed!* "
+                      required="required "
+                      data-error="Érvényes email cím szükséges. "
+                    />
+                    <div class="help-block with-errors "></div>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="form-group ">
+                    <label for="form_phone ">Telefonszám *</label>
+                    <input
+                      id="form_phone "
+                      type="tel "
+                      name="phone "
+                      class="form-control "
+                      placeholder="Telefonszám * "
+                    />
+                    <div class="help-block with-errors "></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-12 ">
+                  <div class="form-group ">
+                    <label for="form_message ">Üzenet *</label>
+                    <textarea
+                      id="form_message "
+                      name="message "
+                      class="form-control "
+                      placeholder="Üzenj nekünk! * "
+                      rows="4 "
+                      required
+                      data-error="Kérlek, hagyj üzenetet. "
+                    ></textarea>
+                    <div class="help-block with-errors "></div>
+                  </div>
+                </div>
+                <div class="col-md-12 " style="margin: 1cm 0cm 0cm 15cm ">
+                  <input
+                    type="submit "
+                    class="btn btn-success btn-send "
+                    value="Leadás "
+                  />
+                  
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
