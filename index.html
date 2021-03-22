@@ -42,7 +42,7 @@
         <br>
 
         <div class="row">
-            <div class="col-md-4  text-white text-center ">
+            <div class="col-md-4 bg-dark text-white text-center ">
                 <img class=" card-img-top " src="https://www.bumm.sk/uploads/news/092/209092/ujra-pozitiv-lett-cristiano-ronaldo-koronavirus-tesztje_209092.jpg?v1611739451 " alt="Cristiano Ronaldo ">
                 <div class="card-body ">
                     <p class="card-text ">Oldalubkon megtekinthetik a mai kor leghíresebb focistáit</p>
@@ -66,59 +66,35 @@
                 </div>
             </div>
 
-    <nav class=" navbar navbar-expand-md bg-dark navbar-dark ">
-        <a class="navbar-brand " href="start.html " onclick="$( '#mainContainer').load( 'index.html'); ">Home</a>
-        <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#collapsibleNavbar ">
-            <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse " id="collapsibleNavbar ">
-            <ul class="navbar-nav ">
-                <li class="nav-item ">
-                    <a class="nav-link " href="content.html" onclick="$( '#mainContainer').load( 'main.html'); ">Main</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="contact.html" onclick="$( '#mainContainer').load( 'contact.html'); ">Contact</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="about.html" onclick="$( '#mainContainer').load( 'about.html'); ">About</a>
-                </li>
-            </ul>
- 
+
+
+
+
+
+
+
+
+            <script>
+                $("#mainContainer ").load("home.html ");
+            </script>
+
+            <div class="container-fluid " id="mainContainer ">
+                <!-- Ide hegesztjük be a html oldalak tartalmát -->
+            </div>
+
+            <script>
+                $(" #mainContainer ").load("home.html ");
+            </script>
+
+
         </div>
+        <footer>
+            <div class="text-center p-3 mt-5 text-white bg-dark">
+                © 2021 Copyright
+            </div>
+        </footer>
 
 
-
-
-
-
-
-        <script>
-            $("#mainContainer ").load("home.html ");
-        </script>
-
-        <div class="container-fluid " id="mainContainer ">
-            <!-- Ide hegesztjük be a html oldalak tartalmát -->
-        </div>
-
-        <script>
-            $(" #mainContainer ").load("home.html ");
-        </script>
-
-
-    </div>
-    <footer>
-        <div class="text-center p-3 mt-5 text-white bg-dark">
-            © 2021 Copyright
-        </div>
-    </footer>
-
-    <div class="container-fluid " id="mainContainer ">
-        <!-- Ide hegesztjük be a html oldalak tartalmát -->
-    </div>
-
-    <script>
-        $(" #mainContainer ").load("home.html ");
-    </script>
 
 </body>
 
