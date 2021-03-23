@@ -23,7 +23,7 @@
         }
     </style>
 
-    <nav class=" navbar navbar-expand-md bg-dark navbar-dark ">
+    <nav class=" navbar navbar-expand-md bg-dark navbar-dark rounded">
         <a class="navbar-brand " href="start.html " onclick="$( '#mainContainer').load( 'index.html'); ">Home</a
         >
         <button
@@ -64,8 +64,8 @@
         </div>
       </nav>
       <br />
-      <div class="container-fluid " id="mainContainer "></div>
-      <div class="row ">
+      <div class="container-fluid" id="mainContainer "></div>
+      <div class="row " style="margin: 2cm 5cm 2cm 5cm;">
         <div class="col-lg-6 col-lg-offset-4 ">
           <form id="contact-form " method="post " action=" " role="form ">
             <div class="messages "></div>
@@ -74,7 +74,7 @@
               <div class="row ">
                 <div class="col-md-6 ">
                   <div class="form-group ">
-                    <label for="form_name " class="text-white"> Keresztnév *</label>
+                    <label for="form_name " class="font-italic"> Keresztnév *</label>
                     <input
                       id="form_name "
                       type="text "
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-md-6 ">
                   <div class="form-group ">
-                    <label for="form_lastname " class="text-white">Vezetéknév *</label>
+                    <label for="form_lastname" class="font-italic">Vezetéknév *</label>
                     <input
                       id="form_lastname "
                       type="text "
@@ -106,7 +106,7 @@
               <div class="row ">
                 <div class="col-md-6 ">
                   <div class="form-group ">
-                    <label for="form_email " class="text-white">Email *</label>
+                    <label for="form_email " class="font-italic">Email *</label>
                     <input
                       id="form_email "
                       type="email "
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-md-6 ">
                   <div class="form-group ">
-                    <label for="form_phone" class="text-white">Telefonszám *</label>
+                    <label for="form_phone" class="font-italic">Telefonszám *</label>
                     <input
                       id="form_phone "
                       type="tel "
@@ -136,7 +136,7 @@
               <div class="row ">
                 <div class="col-md-12 ">
                   <div class="form-group ">
-                    <label for="form_message" class="text-white">Üzenet *</label>
+                    <label for="form_message" class="font-italic">Üzenet *</label>
                     <textarea
                       id="form_message "
                       name="message "
@@ -165,7 +165,7 @@
       </div>
     </body>
     <footer>
-      <div class="text-center p-3 mt-5 text-white bg-dark">
+      <div class=" text-center p-lg-4 m-5 text-white bg-dark rounded">
       © 2021 Copyright
       </div>
     </footer>
